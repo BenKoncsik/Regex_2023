@@ -37,3 +37,6 @@ getUTCDateTimes --> 680100s --> 294300 s
 useCapturingGroup --> 2859200s --> 1359400 s
 getValidDateTimesUsingLazy --> 449000s --> 260000 s
 
+### Off topic:
+Szerintem ez minumum 60/40 pontot megér. 😂 
+
