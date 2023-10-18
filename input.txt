@@ -1,0 +1,25 @@
+Alma a fa alatt.
+Barack az asztalon.
+Korte a kosárban.
+Meggy a piacon.
+Narancs a hűtőben.
+2023-10-15 12:45:30
+2000-01-01 00:00:00
+2000-01- 01 00:00:00
+2099-12-31 23:59:59
+1099-12-31 23:59:59
+3099-12-31 23:59:59
+3099-12 -31 23:59:59
+UTC 2000-01-01 00:00:00
+UTC 1800-01-01 00:00:00
+UTC 2000-01-01 00:00:00
+UTC 9000-01-01 00:00:00
+Koncsikok a királyok
+alma alma
+koncsik1 koncsik1 koncsik1 koncsik1
+koncsik2 a koncsik2
+koncsik koncsik
+Év: 2000, Hónap: 01, Nap: 01
+Év: 1800, Hónap: 09, Nap: 10
+Év: 3000, Hónap: 01, Nap: 01
+Év: 2020, Hónap: 1, Nap: 1

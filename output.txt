@@ -1,0 +1,146 @@
+Komplex regex output: 
+Kiszedi az elsö szavakat és számokat a bemeneti szövegből.Alma
+Barack
+Korte
+Meggy
+Narancs
+2023
+2000
+2000
+2099
+1099
+3099
+3099
+UTC
+UTC
+UTC
+UTC
+Koncsikok
+alma
+koncsik1
+koncsik2
+koncsik
+------------------------
+Keresi és gyűjti össze az érvényes dátum-idő formátumú karakterláncokat a megadott szövegből.
+2023-10-15 12:45:30
+2000-01-01 00:00:00
+2099-12-31 23:59:59
+2000-01-01 00:00:00
+2000-01-01 00:00:00------------------------
+Keresi az érvényes dátum-idő formátumú karakterláncokat a megadott szövegből, majd ezekből kinyeri az évet, hónapot és napot. Az érvényes formátum: "ÉÉÉÉ-HH-NN ÓÓ:PP:MM".
+Year: 2023, Month: 10, Day: 15
+Year: 2000, Month: 01, Day: 01
+Year: 2099, Month: 12, Day: 31
+Year: 2000, Month: 01, Day: 01
+Year: 2000, Month: 01, Day: 01------------------------
+Keresi a szövegben az azonos szavakat, amelyek egymás mellett állnak.alma alma
+koncsik1 koncsik1
+koncsik1 koncsik1
+koncsik koncsik------------------------
+Keresi az érvényes dátum-idő formátumú karakterláncokat a megadott szövegben több soron át. A regex kifejezésben használt "possessive quantifier" (++ jelölés)
+2023-10-15 12:45:30
+2000-01-01 00:00:00
+2099-12-31 23:59:59
+2000-01-01 00:00:00
+2000-01-01 00:00:00------------------------
+Keresi az érvényes dátum-idő formátumú karakterláncokat a megadott szövegben több soron át. A regex kifejezésben használt "lazy quantifier" (?? jelölés)
+2023-10-15 12:45:30
+2000-01-01 00:00:00
+2099-12-31 23:59:59
+2000-01-01 00:00:00
+2000-01-01 00:00:00------------------------
+Keresi az érvényes dátum-idő formátumú karakterláncokat a megadott szövegben több soron át.  használt "atomi csoport"
+2023-10-15 12:45:30
+2000-01-01 00:00:00
+2000-01-01 00:00:00
+2000-01-01 00:00:00------------------------
+Keresi az "UTC" előtaggal ellátott dátum-idő formátumú karakterláncokat a megadott szövegben több soron át.
+2000-01-01 00:00:00
+1800-01-01 00:00:00
+2000-01-01 00:00:00
+9000-01-01 00:00:00------------------------
+Feldolgozza a szövegben található "Év: ÉÉÉÉ, Hónap: HH, Nap: NN" formátumú dátumoka cupture gorup és egyéb feldolgozás.
+2000-01-01
+1800-09-10
+3000-01-01
+2020-01-01------------------------
+Simple regex output: 
+Kiszedi az elsö szavakat és számokat a bemeneti szövegből.
+Alma
+Barack
+Korte
+Meggy
+Narancs
+2023
+2000
+2000
+2099
+1099
+3099
+3099
+UTC
+UTC
+UTC
+UTC
+Koncsikok
+alma
+koncsik1
+koncsik2
+koncsik------------------------
+Keresi és gyűjti össze az érvényes dátum-idő formátumú karakterláncokat a megadott szövegből.
+2023-10-15 12:45:30
+2000-01-01 00:00:00
+2099-12-31 23:59:59
+2000-01-01 00:00:00
+2000-01-01 00:00:00------------------------
+Keresi az érvényes dátum-idő formátumú karakterláncokat a megadott szövegből, majd ezekből kinyeri az évet, hónapot és napot. Az érvényes formátum: "ÉÉÉÉ-HH-NN ÓÓ:PP:MM".
+Year: 2023, Month: 10, Day: 15
+Year: 2000, Month: 01, Day: 01
+Year: 2099, Month: 12, Day: 31
+Year: 2000, Month: 01, Day: 01
+Year: 2000, Month: 01, Day: 01------------------------
+Keresi a szövegben az azonos szavakat, amelyek egymás mellett állnak.
+
+alma alma
+
+koncsik1 koncsik1 
+
+koncsik koncsik------------------------
+Keresi az érvényes dátum-idő formátumú karakterláncokat a megadott szövegben több soron át. A regex kifejezésben használt "possessive quantifier" (++ jelölés)
+2023-10-15 12:45:30
+2000-01-01 00:00:00
+2099-12-31 23:59:59
+2000-01-01 00:00:00
+2000-01-01 00:00:00------------------------
+Keresi az érvényes dátum-idő formátumú karakterláncokat a megadott szövegben több soron át. A regex kifejezésben használt "lazy quantifier" (?? jelölés)
+2023-10-15 12:45:30
+2000-01-01 00:00:00
+2099-12-31 23:59:59
+2000-01-01 00:00:00
+2000-01-01 00:00:00------------------------
+Keresi az érvényes dátum-idő formátumú karakterláncokat a megadott szövegben több soron át.  használt "atomi csoport"
+2023-10-15 12:45:30
+2000-01-01 00:00:00
+2099-12-31 23:59:59
+2000-01-01 00:00:00
+2000-01-01 00:00:00------------------------
+Keresi az "UTC" előtaggal ellátott dátum-idő formátumú karakterláncokat a megadott szövegben több soron át.
+2000-01-01 00:00:00
+1800-01-01 00:00:00
+2000-01-01 00:00:00
+9000-01-01 00:00:00------------------------
+Feldolgozza a szövegben található "Év: ÉÉÉÉ, Hónap: HH, Nap: NN" formátumú dátumoka cupture gorup és egyéb feldolgozás.
+2000-01-01
+1800-09-10
+3000-01-01------------------------
+
+
+Futási idök:Fügvény --> complex regex futási ifeje s --> egyszerü regex futási ideje sdateTime --> 1677200s --> 421500 s
+findDoubleWords --> 2579800s --> 1180200 s
+simplifyDate --> 906800s --> 94900 s
+getValidDateTimes --> 3202300s --> 12397100 s
+getValidDateTimesUsingPossessive --> 454300s --> 178800 s
+getValidDateTimesUsingAtomicGroup --> 271800s --> 189700 s
+getUTCDateTimes --> 1272800s --> 315400 s
+useCapturingGroup --> 2369300s --> 972900 s
+getValidDateTimesUsingLazy --> 325700s --> 150600 s
