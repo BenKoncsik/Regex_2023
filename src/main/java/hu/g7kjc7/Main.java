@@ -36,63 +36,63 @@ public class Main {
         regexRunTime.put("useCapturingGroup", end - start);
         end = System.nanoTime();
         regexRunTime.put("useCapturingGroup", end - start);
-        results.append("------------------------\n");
+        results.append("\n------------------------\n");
 
         results.append("Keresi és gyűjti össze az érvényes dátum-idő formátumú karakterláncokat a megadott szövegből.");
         start = System.nanoTime();
         results.append(RegexFunctions.getValidDateTimes(content));
         end = System.nanoTime();
         regexRunTime.put("getValidDateTimes", end - start);
-        results.append("------------------------\n");
+        results.append("\n------------------------\n");
 
         results.append("Keresi az érvényes dátum-idő formátumú karakterláncokat a megadott szövegből, majd ezekből kinyeri az évet, hónapot és napot. Az érvényes formátum: \"ÉÉÉÉ-HH-NN ÓÓ:PP:MM\".");
         start = System.nanoTime();
         results.append(RegexFunctions.dateTime(content));
         end = System.nanoTime();
         regexRunTime.put("dateTime", end - start);
-        results.append("------------------------\n");
+        results.append("\n------------------------\n");
 
         results.append("Keresi a szövegben az azonos szavakat, amelyek egymás mellett állnak.");
         start = System.nanoTime();
         results.append(RegexFunctions.findDoubleWords(content));
         end = System.nanoTime();
         regexRunTime.put("findDoubleWords", end - start);
-        results.append("------------------------\n");
+        results.append("\n------------------------\n");
 
         results.append("Keresi az érvényes dátum-idő formátumú karakterláncokat a megadott szövegben több soron át. A regex kifejezésben használt \"possessive quantifier\" (++ jelölés)");
         start = System.nanoTime();
         results.append(RegexFunctions.getValidDateTimesUsingPossessive(content));
         end = System.nanoTime();
         regexRunTime.put("getValidDateTimesUsingPossessive", end - start);
-        results.append("------------------------\n");
+        results.append("\n------------------------\n");
 
         results.append("Keresi az érvényes dátum-idő formátumú karakterláncokat a megadott szövegben több soron át. A regex kifejezésben használt \"lazy quantifier\" (?? jelölés)");
         start = System.nanoTime();
         results.append(RegexFunctions.getValidDateTimesUsingLazy(content));
         end = System.nanoTime();
         regexRunTime.put("getValidDateTimesUsingLazy", end - start);
-        results.append("------------------------\n");
+        results.append("\n------------------------\n");
 
         results.append("Keresi az érvényes dátum-idő formátumú karakterláncokat a megadott szövegben több soron át.  használt \"atomi csoport\"");
         start = System.nanoTime();
         results.append(RegexFunctions.getValidDateTimesUsingAtomicGroup(content));
         end = System.nanoTime();
         regexRunTime.put("getValidDateTimesUsingAtomicGroup", end - start);
-        results.append("------------------------\n");
+        results.append("\n------------------------\n");
 
         results.append("Keresi az \"UTC\" előtaggal ellátott dátum-idő formátumú karakterláncokat a megadott szövegben több soron át.");
         start = System.nanoTime();
         results.append(RegexFunctions.getUTCDateTimes(content));
         end = System.nanoTime();
         regexRunTime.put("getUTCDateTimes", end - start);
-        results.append("------------------------\n");
+        results.append("\n------------------------\n");
 
         results.append("Feldolgozza a szövegben található \"Év: ÉÉÉÉ, Hónap: HH, Nap: NN\" formátumú dátumoka cupture gorup és egyéb feldolgozás.");
         start = System.nanoTime();
         results.append(RegexFunctions.simplifyDate(content));
         end = System.nanoTime();
         regexRunTime.put("simplifyDate", end - start);
-        results.append("------------------------\n");
+        results.append("\n------------------------\n");
 
 
         results.append("Simple regex output: \n");
@@ -101,63 +101,63 @@ public class Main {
         results.append(RegexSimpleFunctions.useCapturingGroup(content));
         end = System.nanoTime();
         simpleRegexRunTime.put("useCapturingGroup", end - start);
-        results.append("------------------------\n");
+        results.append("\n------------------------\n");
 
         results.append("Keresi és gyűjti össze az érvényes dátum-idő formátumú karakterláncokat a megadott szövegből.");
         start = System.nanoTime();
         results.append(RegexSimpleFunctions.getValidDateTimes(content));
         end = System.nanoTime();
         simpleRegexRunTime.put("getValidDateTimes", end - start);
-        results.append("------------------------\n");
+        results.append("\n------------------------\n");
 
         results.append("Keresi az érvényes dátum-idő formátumú karakterláncokat a megadott szövegből, majd ezekből kinyeri az évet, hónapot és napot. Az érvényes formátum: \"ÉÉÉÉ-HH-NN ÓÓ:PP:MM\".");
         start = System.nanoTime();
         results.append(RegexSimpleFunctions.dateTime(content));
         end = System.nanoTime();
         simpleRegexRunTime.put("dateTime", end - start);
-        results.append("------------------------\n");
+        results.append("\n------------------------\n");
 
         results.append("Keresi a szövegben az azonos szavakat, amelyek egymás mellett állnak.");
         start = System.nanoTime();
         results.append(RegexSimpleFunctions.findDoubleWords(content));
         end = System.nanoTime();
         simpleRegexRunTime.put("findDoubleWords", end - start);
-        results.append("------------------------\n");
+        results.append("\n------------------------\n");
 
         results.append("Keresi az érvényes dátum-idő formátumú karakterláncokat a megadott szövegben több soron át. A regex kifejezésben használt \"possessive quantifier\" (++ jelölés)");
         start = System.nanoTime();
         results.append(RegexSimpleFunctions.getValidDateTimesUsingPossessive(content));
         end = System.nanoTime();
         simpleRegexRunTime.put("getValidDateTimesUsingPossessive", end - start);
-        results.append("------------------------\n");
+        results.append("\n------------------------\n");
 
         results.append("Keresi az érvényes dátum-idő formátumú karakterláncokat a megadott szövegben több soron át. A regex kifejezésben használt \"lazy quantifier\" (?? jelölés)");
         start = System.nanoTime();
         results.append(RegexSimpleFunctions.getValidDateTimesUsingLazy(content));
         end = System.nanoTime();
         simpleRegexRunTime.put("getValidDateTimesUsingLazy", end - start);
-        results.append("------------------------\n");
+        results.append("\n------------------------\n");
 
         results.append("Keresi az érvényes dátum-idő formátumú karakterláncokat a megadott szövegben több soron át.  használt \"atomi csoport\"");
         start = System.nanoTime();
         results.append(RegexSimpleFunctions.getValidDateTimesUsingAtomicGroup(content));
         end = System.nanoTime();
         simpleRegexRunTime.put("getValidDateTimesUsingAtomicGroup", end - start);
-        results.append("------------------------\n");
+        results.append("\n------------------------\n");
 
         results.append("Keresi az \"UTC\" előtaggal ellátott dátum-idő formátumú karakterláncokat a megadott szövegben több soron át.");
         start = System.nanoTime();
         results.append(RegexSimpleFunctions.getUTCDateTimes(content));
         end = System.nanoTime();
         simpleRegexRunTime.put("getUTCDateTimes", end - start);
-        results.append("------------------------\n");
+        results.append("\n------------------------\n");
 
         results.append("Feldolgozza a szövegben található \"Év: ÉÉÉÉ, Hónap: HH, Nap: NN\" formátumú dátumoka cupture gorup és egyéb feldolgozás.");
         start = System.nanoTime();
         results.append(RegexSimpleFunctions.simplifyDate(content));
         end = System.nanoTime();
         simpleRegexRunTime.put("simplifyDate", end - start);
-        results.append("------------------------\n");
+        results.append("\n------------------------\n");
 
         results.append("\n\nFutási idök:");
         results.append("Fügvény --> complex regex futási ifeje s --> egyszerü regex futási ideje s");

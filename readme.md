@@ -25,3 +25,15 @@ A program minden függvény futási idejét összehasonlítja a komplex regex é
 ## Használat:
 
 `java Main input.txt output.txt`
+
+### Futási idök:
+Fügvény --> complex regex futási ifeje s --> egyszerü regex futási ideje sdateTime --> 2658900s --> 491300 s
+findDoubleWords --> 4298100s --> 2085500 s
+simplifyDate --> 1563300s --> 144500 s
+getValidDateTimes --> 2959400s --> 19918500 s
+getValidDateTimesUsingPossessive --> 452800s --> 331500 s
+getValidDateTimesUsingAtomicGroup --> 586700s --> 271700 s
+getUTCDateTimes --> 680100s --> 294300 s
+useCapturingGroup --> 2859200s --> 1359400 s
+getValidDateTimesUsingLazy --> 449000s --> 260000 s
+
